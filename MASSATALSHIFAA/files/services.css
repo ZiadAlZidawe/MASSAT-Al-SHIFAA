@@ -1,0 +1,99 @@
+*{margin: 0px;padding: 0px;box-sizing: border-box;background-position: center;}
+/* --------------------------------- ---------  القسم الاول  ---------------------------------------------------------------- */
+.homeSection{height: 40vh;background: linear-gradient(rgba(0,175,128,.8),rgba(0,175,128,.8)),url(../images/services.jpg);background-size: cover;
+background-position: center;}
+.homeSection .topNav{display:flex;align-items: center;justify-content: space-between;padding: 0 9%;}
+.homeSection .topNav .titlesSpan{width: 42%;display: flex;justify-content: space-between;direction: rtl;}
+.homeSection .topNav .titlesSpan a{text-decoration: none;color:white;font-size: 14px;transition: .2s;font-family: lemonada;}
+.homeSection .topNav .titlesSpan a:hover{color:rgb(0, 175, 128);}
+.homeSection .topNav .logoImg{width:100px;}
+.homeSection .topNav span{display: flex;justify-content: center;align-items: center;}
+.homeSection .content{display:flex;justify-content: center;align-items: center;color: white;font-family: lemonada;width: 100%;}
+.homeSection .content h1{text-align: center;font-size: 45px;width: 100%;font-weight: lighter;}
+.homeSection .content p{font-size: 12px;font-weight: 300;margin: 24px 0 40px 0;text-align: center;}
+ 
+.homeSection .topNav > a{display: none;}
+.homeSection .menu{display: none;}
+/*------------------------------------------------------------- القسم الثاني ------------------------------------------------------------------- */
+.secondSection{padding: 50px 0;display: flex;flex-direction: column;align-items: center;font-family: lemonada;}
+.secondSection .titleSpan{text-align: center;}
+.secondSection .titleSpan h1{color: #1a1b1c;font-size: 26px;}
+.secondSection .titleSpan p{color: #1c1d20fd;font-size: 12px;letter-spacing: .5px;}
+.secondSection .cardsSpan{width: 100%;display: flex;flex-direction: column;}
+.secondSection .cardsSpan div{width: 100%;height: 290px;display: flex;justify-content: center;align-items: center;
+margin:60px 0;}
+.secondSection .cardsSpan div .imgSpan{width: 35%;height: 100%;border-radius: 5px;background-size: cover;}
+.secondSection .cardsSpan div .txtSpan{width: 45%;height: 80%;border-radius: 3px;margin-bottom: -3.4%;
+box-shadow: 0 6px 50px rgb(0 0 0 / 20%);background-color: white;}
+.secondSection .cardsSpan div .txtSpan{display: flex;align-items: flex-start;flex-direction: column;justify-content: space-around;
+font-family: lemonada;padding: 10px 30px;}
+.secondSection .cardsSpan div .txtSpan p{font-size: 12px;width: 100%;font-weight: lighter;word-spacing: 2px;color: #585857;}
+.secondSection .cardsSpan div .txtSpan .sP{color: #00AF80;padding: 6px 26px;font-size: 12px;border-radius: 3px;
+width: auto;box-shadow:0 6px 50px rgb(0 0 0 / 20%);text-decoration: none;}.secondSection .cardsSpan div .txtSpan .sP:hover{box-shadow: 0 0 15px 0 #60D293;
+background-color: #00AF80;transition: .2s;color: white;}
+.secondSection .cardsSpan .fDiv{direction: rtl;}
+.secondSection .cardsSpan .fDiv .txtSpan{margin-right: -2.5%;z-index: 99999px;}
+.secondSection .cardsSpan .sDiv .txtSpan{margin-left: -2.5%;direction: rtl;}
+.secondSection .cardsSpan .fDiv .imgSpan{background-image: url(../images/broken\ lag.jpg);}
+.secondSection .cardsSpan .sDiv .imgSpan{background-image: url(../images/our\ shop.jfif);}
+/* ---------------------------------------------------------  التذييل  -------------------------------------------------------- */
+.footerSection{width: 100%;padding: 50px 30px;display: flex;justify-content: center;align-items: center;flex-direction: column;font-family: lemonada;
+font-size: 14px;}
+.footerSection div{width: 80%;height: 1px;background-color: #00AF80;margin-bottom: 27px;}
+.footerSection span{display: flex;justify-content: space-around;align-items: center;direction: rtl;width: 100%;}
+/* ----------------------------------------------------------- media query -------------------------------------------------------------- */
+@media (max-width:550px){
+
+.homeSection{background-position: center}
+.homeSection .topNav .titlesSpan{display: none;}
+.homeSection .topNav{padding: 0 3%;}
+.homeSection .content h1{font-size: 30px;}
+.homeSection .topNav > a{display: block;}
+.homeSection .menu{display: none;width: 70%;height: 100vh;background-color: #1c1d20fd;position: fixed;top: 0%;right: 0%;padding: 0 20px;z-index: 9999;}
+.homeSection .menu span{width: 100%;height: 90%;display: flex;flex-direction: column;justify-content: space-around;align-items: center;
+font-family: lemonada;}
+.homeSection .menu span a{text-decoration: none;color: whitesmoke;border-bottom: 1px solid white;width: 100%;display: flex;justify-content: center;
+padding: 0px 0;}
+.homeSection .menu #closeIcon{transform: scale(.5);margin-top: 10px;z-index: 9999999999999;}
+
+.secondSection .cardsSpan{width: 100%;padding: 0;}
+.secondSection .cardsSpan div{display: flex;flex-direction: column;width: 100%;height: 10%;}
+.secondSection .cardsSpan div .imgSpan{width: 80%;height: 300px;border-radius: 1px;background-size: cover;background-position: center;}
+.secondSection .cardsSpan div .txtSpan{width: 90%;height: 100%;border-radius: 3px;box-shadow: 0 6px 50px rgb(0 0 0 / 20%);
+background-color: white;margin: 0;}
+.secondSection .cardsSpan div .txtSpan P{margin: 20px 0;}
+
+
+.footerSection{margin:180px 0 90px 0;font-size: 12px;padding: 0;}
+.footerSection span{flex-direction: column;text-align: center;}
+.footerSection span p{margin-top: 10px;}
+}
+/* ------------------------------------------------------------ */
+@media (min-width:550px) and (max-width:800px){
+
+.homeSection .topNav .titlesSpan{display: none;}
+.homeSection .topNav{padding: 0 3%;}
+.homeSection .content h1{font-size: 30px;}
+.homeSection .topNav > a{display: block;}
+.homeSection .menu{display: none;width: 70%;height: 100vh;background-color: #1c1d20fd;position: fixed;top: 0%;right: 0%;padding: 0 20px;z-index: 9999;}
+.homeSection .menu span{width: 100%;height: 90%;display: flex;flex-direction: column;justify-content: space-around;align-items: center;
+font-family: lemonada;}
+.homeSection .menu span a{text-decoration: none;color: whitesmoke;border-bottom: 1px solid white;width: 100%;display: flex;justify-content: center;
+padding: 0px 0;}
+.homeSection .menu #closeIcon{transform: scale(.5);margin-top: 10px;z-index: 9999999999999;}
+
+.secondSection{padding: 50px 15px 80px 15px;}
+.secondSection .cardsSpan div{flex-direction: column;height: 100%;}
+.secondSection .cardsSpan div .imgSpan{width: 60%;height: 200px;background-position: center;}
+.secondSection .cardsSpan div .txtSpan{width: 60%;height: 100%;}
+
+}
+/* ------------------------------------------------------------- */
+@media (min-width:800px) and (max-width:1000px){
+
+.homeSection{background-position: center}
+.homeSection .topNav{padding: 0 3%;}
+.homeSection .content h1{font-size: 30px;}
+    
+
+}

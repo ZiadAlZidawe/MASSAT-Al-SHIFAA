@@ -1,0 +1,337 @@
+*{margin: 0px;padding: 0px;box-sizing: border-box;background-position: center;display: none;}
+/* ------------------------------------------  القسم الاول  ---------------------------------------------------------------- */
+.homeSection{height: 100vh;background: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),url(../images/homeSectionBg.jpg);
+background-size: cover;}
+.homeSection .topNav{display:flex;align-items: center;justify-content: space-between;padding: 0 9%;}
+.homeSection .topNav .titlesSpan{width: 42%;display: flex;justify-content: space-between;direction: rtl;}
+.homeSection .topNav .titlesSpan a{text-decoration: none;color:white;font-size: 14px;transition: .2s;font-family: lemonada;}
+.homeSection .topNav .titlesSpan a:hover{color:#00AF80;}
+.homeSection .topNav .logoImg{width:100px;}
+.homeSection .topNav span{display: flex;justify-content: center;align-items: center;}
+.homeSection .content {display:flex;justify-content: center;align-items: center;position: absolute;
+transform: translate(-50%,-50%);top: 50%;left: 50%;color: white;font-family: lemonada;flex-direction: column;width: 100%;}
+.homeSection .content h1{text-align: center;font-size: 50px;line-height: 132%;width: 100%;font-weight: 700;}
+.homeSection .content p{font-size: 12px;font-weight: 300;margin: 24px 0 40px 0;text-align: center;}
+.homeSection .content .linksDiv .callUs{text-decoration: none;color: white;padding: 6px 26px;background-color: #60D293;
+border-radius: 3px;font-weight: lighter;font-size: 14px;margin-left: 2px;}
+.homeSection .content .linksDiv .callUs:hover{box-shadow: 0 0 15px 0 #60D293;transition: .2s;}
+.homeSection .content .linksDiv .goShop:hover{box-shadow: 0 0 15px 0 whitesmoke;transition: .2s;}
+.homeSection .content .linksDiv .goShop{background-color: whitesmoke;color: #60D293;text-decoration: none;padding: 6px 26px;
+font-size: 14px;border-radius: 3px;font-weight: lighter;margin-right: 2px;}
+
+.homeSection .topNav > a{display: none;}
+.homeSection .menu{display: none;}
+/* --------------------------------------------------- آراء العملاء ------------------------------------------------------- */
+.customersSection .cardsSpan div::before{content:'';background-size:cover;border:2px solid #00AF80;width:50px;height:50px;
+position: absolute;right: 5%;top: -12%;border-radius: 50px;}
+.customersSection .cardsSpan .fCard::before{background-image: url(../images/hajar.jpg);}.customersSection .cardsSpan .sCard::before{background-image: url(../images/Ali.jpg)}.customersSection .cardsSpan .tCard::before{background-image: url(../images/Mohamed.webp);}
+.customersSection .cardsSpan div h3{font-family: lemonada;color: #1a1c22;}
+.customersSection .cardsSpan div h4{font-family: lemonada; color: #585857;margin-bottom: 10px;}
+.customersSection .cardsSpan div p{font-family: lemonada; color: #585857;font-weight: lighter;font-size: 11px;}
+.customersSection{padding: 80px 0;display: flex;flex-direction: column;justify-content: center;align-items: center;background-color: #fafbfc;}
+.customersSection .titleSpan{display:flex;align-items: center;justify-content: center;flex-direction: column;}
+.customersSection .titleSpan h1{font-family: lemonada;font-size: 32px;color: #1a1c22;}
+.customersSection .titleSpan p{font-family: lemonada;font-size:12px;color:gray;font-weight: lighter;word-spacing: 3px;}
+.customersSection .cardsSpan div{width: 350px;height: 185px;background-color: white;border-radius: 3px;padding: 35px;
+box-shadow:0 6px 50px rgb(0 0 0 / 20%);position: relative;}
+.customersSection .cardsSpan{width: 100%;padding: 80px 60px;display: flex;justify-content: space-around;
+direction: rtl;}
+/* ---------------------------------------------------------- 1 خدماتنا  ------------------------------------------------------ */
+.servicesSection1{padding: 80px 0;display: flex;flex-direction: column;justify-content: center;
+align-items: center;background-color: #fafbfc;}
+.servicesSection1 .titleSpan{display:flex;align-items: center;justify-content: center;
+flex-direction: column;}
+.servicesSection1 .titleSpan h1{font-family: lemonada;font-size: 32px;color: #1a1c22;}
+.servicesSection1 .titleSpan p{font-family: lemonada;font-size:12px;color:gray;font-weight: lighter;
+word-spacing: 3px;}
+.servicesSection1 .cardsSpan{width: 100%;padding: 25px 60px 0 60px;display: flex;align-items: center;
+justify-content: space-around;direction:rtl;;}
+.servicesSection1 .cardsSpan div{width: 30%;height: 500px;display: flex;flex-direction: column;
+box-shadow:0 6px 50px rgb(0 0 0 / 20%);overflow: hidden;background-color: #ffffff;border-radius: 5px;padding-bottom: 15px;}
+.servicesSection1 .cardsSpan div .images{width: 100%;height: 50%;}
+.servicesSection1 .cardsSpan div .texts{width: 100%;height: 50%;padding:0 25px;}
+.servicesSection1 .cardsSpan div .images .fImg{width: 100%;height: 90%;}
+.servicesSection1 .cardsSpan div .images .waveImg{width:130%;height:100%;margin:-140px 0 0 -70px;}
+.servicesSection1 .cardsSpan div .texts h2{color: #1a1c22;font-family: lemonada;font-size: 20.5px;line-height: 150%;}
+.servicesSection1 .cardsSpan div .texts p{font-family: lemonada;font-size: 11px;color: #585857;margin: 20px 0 40px 0;word-spacing: 2px;}
+.servicesSection1 .cardsSpan div a{background-color: #60D293;color: #ffffff;text-decoration: none;padding: 4px 24px;
+font-size: 14px;border-radius: 3px;font-weight: lighter;margin-right: 2px;font-family: lemonada;}
+.servicesSection1 .cardsSpan div a:hover{box-shadow: 0 0 15px 0 #60D293;transition: .2s;}
+/* ---------------------------------------------------------- 2 خدماتنا  ------------------------------------------------------ */
+.servicesSection2{background-color: #ffffff;padding: 50px 0 80px 0;display: flex;flex-direction: column;justify-content: center;
+align-items: center;width: 100%;}
+.servicesSection2 .titleSpan{display: flex;align-items: center;justify-content: center;flex-direction: column;}
+.servicesSection2 .titleSpan h1{font-family: lemonada;font-size: 32px;color: #1a1c22;}
+.servicesSection2 .titleSpan p{font-family: lemonada;font-size: 12px;color: gray;font-weight:lighter;word-spacing:3px;}
+.servicesSection2 .cardsSpan{width: 100%;display: flex;flex-direction: column;}
+.servicesSection2 .cardsSpan div{width: 100%;height: 290px;display: flex;justify-content: center;align-items: center;
+margin:60px 0;}
+.servicesSection2 .cardsSpan div .imgSpan{width: 35%;height: 100%;border-radius: 5px;background-size: cover;}
+.servicesSection2 .cardsSpan div .txtSpan{width: 45%;height: 80%;border-radius: 3px;margin-bottom: -3.4%;
+box-shadow: 0 6px 50px rgb(0 0 0 / 20%);background-color: white;}
+.servicesSection2 .cardsSpan .fDiv,.servicesSection2 .cardsSpan .tDiv{direction: rtl;}
+.servicesSection2 .cardsSpan .fDiv .txtSpan,.servicesSection2 .cardsSpan .tDiv .txtSpan{margin-right: -2.5%;z-index: 99999px;}
+.servicesSection2 .cardsSpan .sDiv .txtSpan,.servicesSection2 .cardsSpan .foDiv .txtSpan{margin-left: -2.5%;direction: rtl;}
+.servicesSection2 .cardsSpan .fDiv .imgSpan{background-image: url(../images/sleep\ cat.jpg);}
+.servicesSection2 .cardsSpan .sDiv .imgSpan{background-image: url(../images/dog-6877280_1920.jpg);}
+.servicesSection2 .cardsSpan .tDiv .imgSpan{background-image: url(../images/حلاقة.jpg);}
+.servicesSection2 .cardsSpan .foDiv .imgSpan{background-image: url(../images/sonar.jpg);}
+.servicesSection2 .cardsSpan div .txtSpan{display: flex;align-items: flex-start;flex-direction: column;justify-content: space-around;
+font-family: lemonada;padding: 10px 30px;}
+.servicesSection2 .cardsSpan div .txtSpan p{font-size: 12px;width: 100%;font-weight: lighter;word-spacing: 2px;color: #585857;}
+.servicesSection2 .cardsSpan div .txtSpan .sP{color: #00AF80;padding: 6px 26px;font-size: 14;border-radius: 3px;
+border:1px dashed #00AF80;width: auto;}.servicesSection2 .cardsSpan div .txtSpan .sP:hover{box-shadow: 0 0 15px 0 #60D293;
+background-color: #00AF80;transition: .2s;color: white;}
+/* ------------------------------------------------------------مميزاتنا ------------------------------------------------------- */
+.featuresSection{padding:30px 70px 150px 70px;display: flex;justify-content: center;flex-direction: column;}
+.featuresSection .txtSpan h1{font-family: lemonada;direction: rtl;}
+.featuresSection .cardsSpan{width: 100%;height: 270px;display: flex;align-items: center;justify-content:space-between;margin: 15px 0;}
+.featuresSection .cardsSpan .imgSpan{height: 100%;width: 33%;background-image: url(../images/animals.jpg);background-size:cover;
+box-shadow: 0 6px 50px rgb(0 0 0 / 20%);}
+.featuresSection .cardsSpan .container{width: 60%;height: 100%;display: flex;justify-content:space-around;align-items: center;
+direction: rtl;flex-direction:column;}
+.featuresSection .cardsSpan .container nav{width: 100%;height: 40%;display: flex;justify-content: space-between;font-family: lemonada;}
+.featuresSection .cardsSpan .container span{height: 100%;width:47%;display: flex;flex-direction: column;justify-content: space-around;
+align-items: flex-start;background-color: #f6f6f6;padding: 10px;}
+.featuresSection .cardsSpan .container p{font-size: 12px;width: 100%;}
+.featuresSection .cardsSpan .container h3{color: rgb(0, 175, 128);}
+/* ----------------------------------------------------------------  زيارة المتجر  -------------------------------------------- */
+.shopSection{display: flex;justify-content: space-around;align-items: center;direction: rtl;width: 100%;
+flex-direction: column;height: 300px;background-image:linear-gradient(rgba(0,175,128,.5),rgba(0,175,128,.5)),url(../images/our\ shop.jfif);background-size: cover;}
+.shopSection span{display: flex;flex-direction: column;align-items: center;}
+.shopSection h1{font-family: lemonada;font-size: 40px;font-weight: lighter;color: white;}
+.shopSection p{font-family: lemonada;color:white}
+.shopSection a{color: #00AF80;font-family: lemonada;text-decoration: none;padding: 6px 40px;background-color: whitesmoke;border-radius: 4px;}
+.shopSection a:hover{box-shadow: 0 0 15px 0 whitesmoke;transition: .2s;}
+/* ----------------------------------------------------------   من نحن   ----------------------------------------------------   */
+.usSection{padding:190px 90px 140px 90px;display: flex;align-items: center;justify-content: space-around;
+direction: rtl;}
+.usSection .imgSpan{background-image: url(../images/who\ us.jpg);background-size: cover;background-position: center;width: 44%;height:240px;
+box-shadow: 30px -30px #5DCE90;}
+.usSection .txtSpan{width: 45%;font-family: lemonada;}
+.usSection .txtSpan h1{font-size: 35px;}
+.usSection .txtSpan p{color: #585857;font-weight: lighter;font-size: 13px;margin-bottom: 20px;line-height: 30px;}
+.usSection .txtSpan a{text-decoration: none;color:white;font-size: 14px;transition: .2s;font-family: lemonada;background-color: #60D293;
+padding: 6px 26px;border-radius: 3px;}
+/* ------------------------------------------------------   تواصل معنا   ------------------------------------------------------ */
+.callUsSection{width: 100%;height: 500px;display: flex;justify-content: center;padding: 80px 0;}
+.callUsSection div{width: 80%;height: 100%;display: flex;justify-content: center;direction: rtl;}
+.callUsSection div .textsSpan{width: 50%;height: 100%;font-family: lemonada;direction: rtl;
+padding: 20px;}
+.callUsSection div .locationSpan{width: 50%;height: 100%;}
+.callUsSection div .locationSpan iframe{width: 100%;height: 100%;}
+.callUsSection div .textsSpan h1{font-size: 25px;}
+.callUsSection div .textsSpan .fP{font-size: 12px;color: #585857;margin-bottom: 20px;}
+.callUsSection div .textsSpan a{width: 90%;height: 20%;background-color: #1a1c22;margin-bottom: 10px;border-radius: 3px;cursor: pointer;
+display: flex;align-items: center;justify-content: space-around;color: white;padding: 0 40px;text-decoration: none;}
+.callUsSection div .textsSpan .fDiv{background-image: linear-gradient(to right , #1976d2 , #3a9ef0);}
+.callUsSection div .textsSpan .fDiv:hover{box-shadow: 0 0 15px 0 #1976D2;transition: .2s;}
+.callUsSection div .textsSpan .iDiv{background-image: linear-gradient(to right top, #fdd854, #ffc245, #ffab3b, #ff9437, #ff7b38, #ff6842, #ff554e, #fb415a, #f5346e, #eb2e81, #dc2f93, #c837a4);}
+.callUsSection div .textsSpan .iDiv:hover{box-shadow: 0 0 15px 0 #EA4959;transition: .2s;}
+.callUsSection div .textsSpan .tDiv{font-size: 12px;background-image: linear-gradient(to right bottom, #00af80, #00bb7c, #00c675, #00d16c, #35e66d)}
+.callUsSection div .textsSpan .tDiv:hover{box-shadow: 0 0 15px 0 #00AF80;transition: .2s;}
+/* ---------------------------------------------------------  التذييل  -------------------------------------------------------- */
+.footerSection{width: 100%;padding: 50px 30px;display: flex;justify-content: center;align-items: center;flex-direction: column;
+font-family: lemonada;font-size: 14px;}
+.footerSection div{width: 80%;height: 1px;background-color: #00AF80;margin-bottom: 27px;}
+.footerSection span{display: flex;justify-content: space-around;align-items: center;direction: rtl;width: 100%;}
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ------------------------------------------------------  media queries  ------------------------------------------------------- */
+@media (max-width:550px){
+
+.homeSection{background-position: center}
+.homeSection .topNav .titlesSpan{display: none;}
+.homeSection .topNav{padding: 0 3%;}
+.homeSection .content h1{font-size: 30px;}
+
+.customersSection .titleSpan{text-align:center;word-spacing: 0px;}
+.customersSection .cardsSpan{padding:60px 20px;display: flex;flex-direction: column;align-items: center;}
+.customersSection .cardsSpan Div{width: 400px;margin-bottom: 60px;}
+
+.servicesSection1{padding: 0 0 80px 0;}
+.servicesSection1 .titleSpan{text-align: center;word-spacing: 0;}
+.servicesSection1 .cardsSpan{width: 100%;padding: 25px 40px 0 40px;display: flex;align-items: center;
+flex-direction: column;}
+.servicesSection1 .cardsSpan div{width: 100%;margin-bottom: 40px;}
+.servicesSection1 .cardsSpan div a{background: none;color: #00AF80;padding: 4px 0;}
+
+.servicesSection2 .cardsSpan{width: 100%;padding: 0;}
+.servicesSection2 .cardsSpan div{display: flex;flex-direction: column;width: 100%;height: 10%;}
+.servicesSection2 .cardsSpan div .imgSpan{width: 80%;height: 300px;border-radius: 1px;background-size: cover;background-position: center;}
+.servicesSection2 .cardsSpan div .txtSpan{width: 90%;height: 100%;border-radius: 3px;box-shadow: 0 6px 50px rgb(0 0 0 / 20%);
+background-color: white;margin: 0;}
+.servicesSection2 .cardsSpan div .txtSpan P{margin-top: 20px;}
+
+.featuresSection{padding:30px 40px 50px 40px;background-position: center;font-size: 12px;}
+.featuresSection .txtSpan h1{font-size: 30px;}
+.featuresSection .cardsSpan{flex-direction: column;height: 1000px;}
+.featuresSection .cardsSpan .imgSpan{width:100%;height: 30%;}
+.featuresSection .cardsSpan .container{width: 100%;}
+.featuresSection .cardsSpan .container nav{width: 100%;flex-direction: column;height: 50%;}
+.featuresSection .cardsSpan .container nav span{width: 100%;margin:10px 0 20px 0;}
+
+.shopSection{text-align: center;}
+
+.usSection{padding:100px 40px 150px 20px;display: flex;align-items: center;justify-content: space-around;
+direction: rtl;flex-direction: column;}
+.usSection .imgSpan{width: 100%;height: 200px;}
+.usSection .txtSpan{width: 100%;}
+.usSection .txtSpan p{margin: 20px 0 25px 0;}
+.usSection .txtSpan .zead{color: #00AF80;}
+
+.callUsSection{padding-bottom: 0px;}
+.callUsSection > div{width: 90%;height: 100%;display: flex;direction: rtl;flex-direction: column;}
+.callUsSection div .textsSpan{width: 100%;margin-bottom: 0px;display: flex;flex-direction: column;align-items:center;}
+.callUsSection div .textsSpan h1{text-align: start;font-size: 21px;}
+.callUsSection .textsSpan div{height: 40px;}
+.callUsSection .textsSpan .c{padding: 20px 5px;display: flex;justify-content: space-around;align-items: center;}
+.callUsSection div .locationSpan{width: 100%;}
+.callUsSection div .locationSpan iframe{width: 100%;height: 300px;}
+
+.footerSection{margin:180px 0 90px 0;font-size: 14px;padding: 0;}
+.footerSection span{flex-direction: column;text-align: center;}
+.footerSection span p{margin-top: 10px;}
+
+.homeSection .topNav > a{display: block;}
+
+.homeSection .menu{display: none;width: 70%;height: 100vh;background-color: #1c1d20fd;position: fixed;top: 0%;right: 0%;padding: 0 20px;z-index: 9999;}
+.homeSection .menu span{width: 100%;height: 90%;display: flex;flex-direction: column;justify-content: space-around;align-items: center;
+font-family: lemonada;}
+.homeSection .menu span a{text-decoration: none;color: whitesmoke;border-bottom: 1px solid white;width: 100%;display: flex;justify-content: center;
+padding: 0px 0;}
+.homeSection .menu #closeIcon{transform: scale(.5);margin-top: 10px;z-index: 9999999999999;}
+
+
+}
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+@media (min-width:550px) and (max-width:800px){
+
+.homeSection .topNav{padding: 0 4%;}
+.homeSection .topNav .titlesSpan{width: 70%;}
+
+.customersSection .cardsSpan{flex-direction: column;align-items: center;}
+.customersSection .cardsSpan div{margin-bottom: 50px;}
+
+.servicesSection1{padding-bottom: 40px;}
+.servicesSection1 .cardsSpan{flex-direction: column;padding: 25px 0 0 0;}
+.servicesSection1 .cardsSpan div{width: 60%;margin-bottom: 50px;}
+
+.servicesSection2{padding: 50px 15px 80px 15px;}
+.servicesSection2 .cardsSpan div{flex-direction: column;height: 100%;}
+.servicesSection2 .cardsSpan div .imgSpan{width: 60%;height: 200px;background-position: center;}
+.servicesSection2 .cardsSpan div .txtSpan{width: 60%;height: 100%;}
+
+
+.featuresSection .cardsSpan{flex-direction: column;}
+.featuresSection{padding:30px 40px 50px 40px;background-position: center;}
+.featuresSection .txtSpan h1{font-size: 30px;}
+.featuresSection .cardsSpan{flex-direction: column;height: 1000px;}
+.featuresSection .cardsSpan .imgSpan{width:100%;height: 30%;}
+.featuresSection .cardsSpan .container{width: 100%;}
+.featuresSection .cardsSpan .container nav{width: 100%;flex-direction: column;height: 50%;}
+.featuresSection .cardsSpan .container nav span{width: 100%;margin:10px 0 20px 0;}
+
+.shopSection{text-align: center;}
+
+.usSection{padding:100px 40px 150px 20px;display: flex;align-items: center;justify-content: space-around;
+direction: rtl;flex-direction: column;}
+.usSection .imgSpan{width: 100%;height: 200px;}
+.usSection .txtSpan{width: 100%;}
+.usSection .txtSpan p{margin: 20px 0 25px 0;}
+.usSection .txtSpan .zead{color: #00AF80;}
+
+.callUsSection{padding-bottom: 0px;}
+.callUsSection > div{width: 90%;height: 100%;display: flex;direction: rtl;flex-direction: column;}
+.callUsSection div .textsSpan{width: 100%;margin-bottom: 0px;display: flex;flex-direction: column;align-items:center;}
+.callUsSection div .textsSpan h1{text-align: start;font-size: 21px;}
+.callUsSection .textsSpan div{height: 40px;}
+.callUsSection .textsSpan .c{padding: 20px 10px;}
+.callUsSection div .locationSpan{width: 100%;}
+.callUsSection div .locationSpan iframe{width: 100%;height: 300px;}
+
+
+.footerSection{margin:180px 0 90px 0;font-size: 12px;padding: 0;}
+.footerSection span{flex-direction: column;text-align: center;}
+.footerSection span p{margin-top: 10px;}
+
+.homeSection .menu{display: none;}
+
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+@media (min-width:800px) and (max-width:1000px){
+
+
+    .homeSection{background-position: center}
+    .homeSection .topNav{padding: 0 3%;}
+    .homeSection .content h1{font-size: 30px;}
+    
+    .customersSection .titleSpan{text-align:center;word-spacing: 0px;}
+    .customersSection .cardsSpan{padding:60px 20px;display: flex;flex-direction: column;align-items: center}
+    .customersSection .cardsSpan Div{width: 400px;margin-bottom: 60px;;}
+    
+    .servicesSection1{padding: 0 0 80px 0;}
+    .servicesSection1 .titleSpan{text-align: center;word-spacing: 0;}
+    .servicesSection1 .cardsSpan{width: 100%;padding: 25px 40px 0 40px;display: flex;align-items: center;}
+    .servicesSection1 .cardsSpan div{width: 40%;margin-bottom: 40px;}
+    .servicesSection1 .cardsSpan div a{background: none;color: #00AF80;padding: 4px 0;}
+
+    .featuresSection{padding:30px 40px 50px 40px;background-position: center;}
+    .featuresSection .txtSpan h1{font-size: 30px;}
+    .featuresSection .cardsSpan{flex-direction: column;height: 600px;}
+    .featuresSection .cardsSpan .imgSpan{width:100%;height: 40%;}
+    .featuresSection .cardsSpan .container{width: 100%;display: flex;height: 50%;}
+    .featuresSection .cardsSpan .container nav{width: 80%;height: 40%;}
+    .featuresSection .cardsSpan .container nav span{width: 48%;margin:5px 0 5px 0;}
+    
+    .shopSection{text-align: center;}
+    
+    .usSection{padding:100px 40px 150px 20px;display: flex;align-items: center;justify-content: space-around;
+    direction: rtl;flex-direction: column;}
+    .usSection .imgSpan{width: 100%;height: 200px;}
+    .usSection .txtSpan{width: 100%;}
+    .usSection .txtSpan p{margin: 20px 0 25px 0;}
+    .usSection .txtSpan .zead{color: #00AF80;}
+    
+    .callUsSection{padding-bottom: 0px;}
+    .callUsSection > div{width: 90%;height: 100%;display: flex;direction: rtl;flex-direction: column;}
+    .callUsSection div .textsSpan{width: 100%;margin-bottom: 0px;display: flex;flex-direction: column;align-items:center;}
+    .callUsSection div .textsSpan h1{text-align: start;font-size: 20px;}
+    .callUsSection .textsSpan div{height: 40px;}
+    .callUsSection .textsSpan .c{padding: 20px 10px;}
+    .callUsSection div .locationSpan{width: 100%;}
+    .callUsSection div .locationSpan iframe{width: 100%;height: 300px;}
+    
+    .footerSection{margin:180px 0 90px 0;font-size: 12px;padding: 0;}
+    .footerSection span{flex-direction: column;text-align: center;}
+    .footerSection span p{margin-top: 10px;}    
+    
+    }
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

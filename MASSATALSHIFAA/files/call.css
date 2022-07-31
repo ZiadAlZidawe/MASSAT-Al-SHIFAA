@@ -1,0 +1,107 @@
+*{margin: 0px;padding: 0px;box-sizing: border-box;background-position: center;}
+/* ------------------------------------------  القسم الاول  ---------------------------------------------------------------- */
+.homeSection{height: 40vh;background: linear-gradient(rgba(0,175,128,.8),rgba(0,175,128,.8)),url(../images/women.jpg);background-size: cover;
+background-position: center;}
+.homeSection .topNav{display:flex;align-items: center;justify-content: space-between;padding: 0 9%;}
+.homeSection .topNav .titlesSpan{width: 42%;display: flex;justify-content: space-between;direction: rtl;}
+.homeSection .topNav .titlesSpan a{text-decoration: none;color:white;font-size: 14px;transition: .2s;font-family: lemonada;}
+.homeSection .topNav .titlesSpan a:hover{color:rgb(0, 175, 128);}
+.homeSection .topNav .logoImg{width:100px;}
+.homeSection .topNav span{display: flex;justify-content: center;align-items: center;}
+.homeSection .content{display:flex;justify-content: center;align-items: center;color: white;font-family: lemonada;width: 100%;}
+.homeSection .content h1{text-align: center;font-size: 35px;width: 100%;font-weight: lighter;}
+ 
+.homeSection .topNav > a{display: none;}
+.homeSection .menu{display: none;}
+/*------------------------------------------------------------- القسم الثاني ------------------------------------------------------------------- */
+.secondSection{display: flex;align-items: center;font-family: lemonada;padding: 50px 0;justify-content: center;width: auto;}
+.secondSection .cardsSpan{width: 90%;display: flex;justify-content: center;height: 500px;direction: rtl;padding: 20px;
+background-image: linear-gradient(to right bottom, #00af80, #00bb7c, #00c675, #00d16c, #35e66d);flex-wrap: wrap;}
+.secondSection .cardsSpan .textsSpan{width: 50%;display: flex;flex-direction: column;justify-content: space-around;
+padding: 50px;color: whitesmoke;}
+.secondSection .cardsSpan .textsSpan h2{font-size: 24px;font-weight: lighter;}  
+.secondSection .cardsSpan .textsSpan div{display: flex;align-items: center;width: 80%;}
+.secondSection .cardsSpan .textsSpan div img{margin-left: 20px;}
+.secondSection .cardsSpan .textsSpan a{font-size: 16px;font-weight: lighter;color: white;text-decoration: none;}
+.secondSection .cardsSpan .textsSpan #fP{direction: ltr;}
+.secondSection .cardsSpan .cardSpan{width: 50%;display: flex;flex-direction: column;justify-content: space-around;align-items: center;}
+.secondSection .cardsSpan .cardSpan .img{width: 200px;height: 200px;background-image: url(../images/ziad.jpeg);border-radius:50%;background-size: cover;
+border: 1.5px solid white;}
+.secondSection .cardsSpan .cardSpan .linksSpan{display: flex;flex-direction: column;direction: ltr;}
+.secondSection .cardsSpan .cardSpan .linksSpan a{color: white;text-decoration: none;display: flex;margin-bottom: 20px;}
+.secondSection .cardsSpan .opacity:hover{opacity: .8;transition: .1s;}
+.secondSection .cardsSpan .cardSpan .linksSpan a img{margin-right: 20px;}
+/* ---------------------------------------------------------  التذييل  -------------------------------------------------------- */
+.footerSection{width: 100%;padding: 50px 30px;display: flex;justify-content: center;align-items: center;flex-direction: column;font-family: lemonada;}
+.footerSection div{width: 80%;height: 1px;background-color: #00AF80;margin-bottom: 27px;}
+.footerSection span{display: flex;justify-content: space-around;align-items: center;direction: rtl;width: 100%;}
+/* ----------------------------------------------------------- media query -------------------------------------------------------------- */
+@media (max-width:550px){
+
+.homeSection{background-position: center}
+.homeSection .topNav .titlesSpan{display: none;}
+.homeSection .topNav{padding: 0 3%;}
+.homeSection .content h1{font-size: 30px;}
+.homeSection .topNav > a{display: block;}
+.homeSection .menu{display: none;width: 70%;height: 100vh;background-color: #1c1d20fd;position: fixed;top: 0%;right: 0%;padding: 0 20px;z-index: 9999;}
+.homeSection .menu span{width: 100%;height: 90%;display: flex;flex-direction: column;justify-content: space-around;align-items: center;
+font-family: lemonada;}
+.homeSection .menu span a{text-decoration: none;color: whitesmoke;border-bottom: 1px solid white;width: 100%;display: flex;justify-content: center;
+padding: 0px 0;}
+.homeSection .menu #closeIcon{transform: scale(.5);margin-top: 10px;z-index: 9999999999999;}
+.footerSection span{flex-direction: column;text-align: center;}
+
+.secondSection .cardsSpan{padding: 10px;width: 95%;flex-direction: column;flex-wrap: unset;height: 2500px;align-items: center;}
+.secondSection .cardsSpan .cardSpan,.secondSection .cardsSpan .textsSpan{width: 100%;display: flex;flex-direction: column;justify-content: space-around;
+align-items: center;text-align: center;}
+.secondSection .cardsSpan .textsSpan div img{margin-left: 16px;transform: scale(.8);}
+.secondSection .cardsSpan .textsSpan h2{font-size: 20px;font-weight: lighter;}  
+.secondSection .cardSpan{justify-content: space-between;}
+.secondSection .cardsSpan .textsSpan div{display: flex;align-items: center;width: 100%;margin-bottom: 10px;}
+.secondSection .cardsSpan .textsSpan a{font-size: 12px;font-weight: lighter;color: white;text-decoration: none;}
+
+
+}
+/* ------------------------------------------------------------ */
+@media (min-width:550px) and (max-width:835px){
+
+.homeSection .topNav{padding: 0 4%;}
+.homeSection .topNav .titlesSpan{width: 70%;}
+.homeSection .menu{display: none;}
+
+.secondSection .cardsSpan{padding: 10px;width: 95%;justify-content: space-between;}
+.secondSection .cardsSpan .textsSpan{width: 50%;display: flex;flex-direction: column;justify-content: space-around;
+padding: 50px;color: whitesmoke;}
+.secondSection .cardsSpan .textsSpan h2{font-size: 20px;font-weight: lighter;}  
+.secondSection .cardsSpan .textsSpan div{display: flex;align-items: center;width: 80%;}
+.secondSection .cardsSpan .textsSpan div img{margin-left: 16px;transform: scale(.8);}
+.secondSection .cardsSpan .textsSpan a{font-size: 12px;font-weight: lighter;color: white;text-decoration: none;}
+.secondSection .cardsSpan .cardSpan{width: 50%;display: flex;flex-direction: column;justify-content: space-around;align-items: center;}
+.secondSection .cardsSpan .cardSpan .img{width: 150px;height: 150px;background-image: url(../images/ziad.jpeg);border-radius:50%;background-size: cover;
+border: 1.5px solid white;}
+.secondSection .cardsSpan .cardSpan .linksSpan{display: flex;flex-direction: column;direction: ltr;}
+.secondSection .cardsSpan .cardSpan .linksSpan a{color: white;text-decoration: none;display: flex;margin-bottom: 20px;font-size: 14px;}
+.secondSection .cardsSpan .opacity:hover{opacity: .8;transition: .1s;}
+.secondSection .cardsSpan .cardSpan .linksSpan a img{margin-right: 16px;transform: scale(.8);}
+
+.footerSection{margin:180px 0 90px 0;font-size: 14px;padding: 0;}
+.footerSection span p{margin-top: 10px;}
+}
+/* ------------------------------------------------------------- */
+@media (min-width:800px) and (max-width:1000px){
+
+.homeSection{background-position: center}
+.homeSection .topNav{padding: 0 3%;}
+.homeSection .content h1{font-size: 30px;}
+    
+.footerSection{margin:180px 0 90px 0;font-size: 14px;padding: 0;}
+.footerSection span p{margin-top: 10px;}    
+}
+/* -------------------------------------------------- */
+@media (max-width:660px){
+
+    .secondSection .cardsSpan{padding: 10px;width: 95%;flex-direction: column;flex-wrap: unset;height: 800px;}
+    .secondSection .cardsSpan .cardSpan,.secondSection .cardsSpan .textsSpan{width: 100%;display: flex;flex-direction: column;justify-content: space-around;align-items: center;}
+    
+
+}

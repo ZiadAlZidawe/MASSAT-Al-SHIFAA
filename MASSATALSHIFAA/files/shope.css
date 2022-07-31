@@ -1,0 +1,139 @@
+*{margin: 0px;padding: 0px;box-sizing: border-box;background-position: center;}
+/* ------------------------------------------  القسم الاول  ---------------------------------------------------------------- */
+.homeSection{height: 40vh;background: linear-gradient(rgba(0,175,128,.8),rgba(0,175,128,.8)),url(../images/shope.jpg);background-size: cover;
+background-position: center;}
+.homeSection .topNav{display:flex;align-items: center;justify-content: space-between;padding: 0 9%;}
+.homeSection .topNav .titlesSpan{width: 42%;display: flex;justify-content: space-between;direction: rtl;}
+.homeSection .topNav .titlesSpan a{text-decoration: none;color:white;font-size: 14px;transition: .2s;font-family: lemonada;}
+.homeSection .topNav .titlesSpan a:hover{color:rgb(0, 175, 128);}
+.homeSection .topNav .logoImg{width:100px;}
+.homeSection .topNav span{display: flex;justify-content: center;align-items: center;}
+.homeSection .content{display:flex;justify-content: center;align-items: center;color: white;font-family: lemonada;width: 100%;}
+.homeSection .content h1{text-align: center;font-size: 45px;width: 100%;font-weight: lighter;}
+.homeSection .content p{font-size: 12px;font-weight: 300;margin: 24px 0 40px 0;text-align: center;}
+
+.homeSection .topNav > a{display: none;}
+.homeSection .menu{display: none;}
+/*------------------------------------------------------------- القسم الثاني ------------------------------------------------------------------- */  
+.servicesSection{padding: 70px;display: flex;flex-direction: column;}
+.servicesSection .titleSpan{text-align: center;font-family: lemonada;}
+.servicesSection .titleSpan h1{font-size: 26px;color:#1a1c1b}
+.servicesSection .titleSpan p{font-size: 12px;color: #1c1d20fd;letter-spacing: .5px;}
+.servicesSection .cardsSpan{padding: 0 100px;display: flex;flex-direction: column;direction: rtl;}
+.servicesSection .cardsSpan nav{margin-top: 50px;width:100%;height:30px;direction:rtl;display:flex;align-items:center;flex-wrap: wrap;}
+.servicesSection .cardsSpan nav a{text-decoration: none;color: white;font-family: lemonada;padding: 0 20px 35px 20px;height: 100%;
+background-color: #00AF80;text-align: center;border: 1.3px solid white;}
+.servicesSection .cardsSpan nav a:hover{color: #00AF80;background-color: whitesmoke;transition: .2s;transform: scale(1.1);}
+.servicesSection .cardsSpan span{display: flex;justify-content: space-between;flex-wrap: wrap;margin-top: 20px;}
+.servicesSection .cardsSpan div{width: 200px;height: 200px;margin-bottom: 30px;background-image: url(../images/animals.jpg);position: relative;
+box-shadow:0 2px 20px rgb(0 0 0 / 20%);background-size: cover;}
+.servicesSection .cardsSpan div::before{content: '';padding: 0 15px;position: absolute;right: 0%;top: 0%;background-color: #00af80a1;
+color: white;font-family: lemonada;text-align: center;font-size: 14px;}
+.servicesSection .cardsSpan div::after{content: '';padding: 0 10px;position: absolute;right: 0%;bottom: 0%;left: 0%;background-color: #00af80a1;
+color: white;font-family: lemonada;text-align: center;font-size: 12px;font-weight: lighter;}
+.servicesSection .cardsSpan nav .active{color: #00AF80;background-color: white;border:1.3px solid #00AF80;transform: scale(1.1);}
+
+/* \\\\\\\\\\\\\\\\\\\لك الحق في التغيير\\\\\\\\\\\\\\\\\\\\ */
+
+
+.servicesSection .cardsSpan .fc{background-image: url(../images/)   ;}
+.servicesSection .cardsSpan .fc::after{content:    'اسم السلعة'    ;}
+.servicesSection .cardsSpan .fc::before{content:    '2000 د.ع'       }
+
+.servicesSection .cardsSpan .sc{background-image: url(../images/);}
+.servicesSection .cardsSpan .sc::after{content: 'اسم السلعة';}
+.servicesSection .cardsSpan .sc::before{content:'2000 د.ع'}
+
+.servicesSection .cardsSpan .tc{background-image: url(../images/);}
+.servicesSection .cardsSpan .tc::after{content: 'اسم السلعة';}
+.servicesSection .cardsSpan .tc::before{content:'2000 د.ع'}
+
+
+/* /////////////////////////////////////////////////////////// */
+
+.servicesSection .cardsSpan span .d,.servicesSection .cardsSpan span .b,.servicesSection .cardsSpan span .m,.servicesSection .cardsSpan span .o{display: none;}
+
+/* ---------------------------------------------------------  التذييل  -------------------------------------------------------- */
+.footerSection{width: 100%;padding: 50px 30px;display: flex;justify-content: center;align-items: center;flex-direction: column;font-family: lemonada;
+font-size: 14px;}
+.footerSection div{width: 80%;height: 1px;background-color: #00AF80;margin-bottom: 27px;}
+.footerSection span{display: flex;justify-content: space-around;align-items: center;direction: rtl;width: 100%;}
+/* ----------------------------------------------------------- media query -------------------------------------------------------------- */
+@media (max-width:500px){
+
+.homeSection{background-position: center}
+.homeSection .topNav .titlesSpan{display: none;}
+.homeSection .topNav{padding: 0 3%;}
+.homeSection .content h1{font-size: 30px;}
+.homeSection .topNav > a{display: block;}
+.homeSection .menu{display: none;width: 70%;height: 100vh;background-color: #1c1d20fd;position: fixed;top: 0%;right: 0%;padding: 0 20px;z-index: 9999;}
+.homeSection .menu span{width: 100%;height: 90%;display: flex;flex-direction: column;justify-content: space-around;align-items: center;
+font-family: lemonada;}
+.homeSection .menu span a{text-decoration: none;color: whitesmoke;border-bottom: 1px solid white;width: 100%;display: flex;justify-content: center;
+padding: 0px 0;}
+.homeSection .menu #closeIcon{transform: scale(.5);margin-top: 10px;z-index: 9999999999999;}
+
+.servicesSection{padding: 0px;display: flex;flex-direction: column;}
+.servicesSection .cardsSpan{padding: 0 20px;display: flex;flex-direction: column;direction: rtl;}
+.servicesSection .cardsSpan span{justify-content: space-around;}
+.servicesSection .cardsSpan nav{margin-bottom: 70px;}
+
+.footerSection{margin:180px 0 90px 0;font-size: 12px;padding: 0;}
+.footerSection span{flex-direction: column;text-align: center;}
+.footerSection span p{margin-top: 10px;}    
+
+}
+/* ------------------------------------------------- */
+@media (min-width:500px) and (max-width:630px){
+
+.homeSection{background-position: center}
+.homeSection .topNav .titlesSpan{display: none;}
+.homeSection .topNav{padding: 0 3%;}
+.homeSection .content h1{font-size: 30px;}
+.homeSection .topNav > a{display: block;}
+.homeSection .menu{display: none;width: 70%;height: 100vh;background-color: #1c1d20fd;position: fixed;top: 0%;right: 0%;padding: 0 20px;z-index: 9999;}
+.homeSection .menu span{width: 100%;height: 90%;display: flex;flex-direction: column;justify-content: space-around;align-items: center;
+font-family: lemonada;}
+.homeSection .menu span a{text-decoration: none;color: whitesmoke;border-bottom: 1px solid white;width: 100%;display: flex;justify-content: center;
+padding: 0px 0;}
+.homeSection .menu #closeIcon{transform: scale(.5);margin-top: 10px;z-index: 9999999999999;}
+
+
+.servicesSection{padding: 10px;display: flex;flex-direction: column;}
+.servicesSection .cardsSpan{padding: 0 35px;display: flex;flex-direction: column;direction: rtl;}
+.servicesSection .cardsSpan span{justify-content: space-around;}
+.servicesSection .cardsSpan nav{margin-bottom: 30px;}
+
+.footerSection{font-size: 12px;}
+
+}
+/* ------------------------------------------------------------ */
+@media (min-width:630px) and (max-width:800px){
+ 
+.homeSection .topNav{padding: 0 4%;}
+.homeSection .topNav .titlesSpan{width: 70%;}
+.homeSection .menu{display: none;}
+
+.servicesSection{padding: 10px;display: flex;flex-direction: column;}
+.servicesSection .cardsSpan{padding: 0 50px;display: flex;flex-direction: column;direction: rtl;}
+
+.footerSection{font-size: 12px;}
+}
+/* ------------------------------------------------------------- */
+@media (min-width:800px) and (max-width:1000px){
+
+.homeSection{background-position: center}
+.homeSection .topNav{padding: 0 3%;}
+.homeSection .content h1{font-size: 30px;}
+
+/* .servicesSection .cardsSpan{padding: 0 20px;display: flex;flex-direction: column;direction: rtl;} */
+
+.footerSection{margin:180px 0 90px 0;font-size: 12px;padding: 0;}
+.footerSection span{text-align: center;}
+.footerSection span p{margin-top: 10px;}    
+
+}
+/* -------------------------------------------------------------- */
+
+
+/* ----------------------------------------- */

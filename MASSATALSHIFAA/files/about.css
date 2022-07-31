@@ -1,0 +1,85 @@
+*{margin: 0px;padding: 0px;box-sizing: border-box;background-position: center;}
+/* ------------------------------------------  القسم الاول  ---------------------------------------------------------------- */
+.homeSection{height: 40vh;background: linear-gradient(rgba(0,175,128,.8),rgba(0,175,128,.8)),url(../images/animals.jpg);background-size: cover;
+background-position: center;}
+.homeSection .topNav{display:flex;align-items: center;justify-content: space-between;padding: 0 9%;}
+.homeSection .topNav .titlesSpan{width: 42%;display: flex;justify-content: space-between;direction: rtl;}
+.homeSection .topNav .titlesSpan a{text-decoration: none;color:white;font-size: 14px;transition: .2s;font-family: lemonada;}
+.homeSection .topNav .titlesSpan a:hover{color:rgb(0, 175, 128);}
+.homeSection .topNav .logoImg{width:100px;}
+.homeSection .topNav span{display: flex;justify-content: center;align-items: center;}
+.homeSection .content{display:flex;justify-content: center;align-items: center;color: white;font-family: lemonada;width: 100%;}
+.homeSection .content h1{text-align: center;font-size: 45px;width: 100%;font-weight: lighter;}
+ 
+.homeSection .topNav > a{display: none;}
+.homeSection .menu{display: none;}
+/*------------------------------------------------------------- القسم الثاني ------------------------------------------------------------------- */
+.mineSection{padding: 50px 0;height: 600px;}
+.mineSection .cardsSpan{width: 100%;height:100%;display: flex;justify-content: center;direction: rtl;padding: 0 20px;}
+.mineSection .cardsSpan .imgSpan{width: 100%;height: 100%;background-image: url(../images/analysis-2030261_1920.jpg);background-size: cover;background-position: center;}
+.mineSection .cardsSpan .textsSpan{font-family: lemonada;box-shadow:0 6px 40px rgb(0 0 0 / 20%);height: 50%;padding: 20px;width: 80%;
+position: relative;right: -5%;bottom: -40%;z-index: 99999999999;background-color: white;}
+.mineSection .cardsSpan h1{font-weight: lighter;font-size: 40px;letter-spacing: .5px;}
+.mineSection .cardsSpan .textsSpan p{font-size: 14px;font-weight: lighter;color: #2e2f31bd;letter-spacing: .7px;width: 95%;} 
+
+/* ---------------------------------------------------------  التذييل  -------------------------------------------------------- */
+.footerSection{width: 100%;padding: 50px 30px;display: flex;justify-content: center;align-items: center;flex-direction: column;font-family: lemonada;}
+.footerSection div{width: 80%;height: 1px;background-color: #00AF80;margin-bottom: 27px;}
+.footerSection span{display: flex;justify-content: space-around;align-items: center;direction: rtl;width: 100%;}
+/* ----------------------------------------------------------- media query -------------------------------------------------------------- */
+@media (max-width:550px){
+
+.homeSection{background-position: center}
+.homeSection .topNav .titlesSpan{display: none;}
+.homeSection .topNav{padding: 0 3%;}
+.homeSection .content h1{font-size: 30px;}
+.homeSection .topNav > a{display: block;}
+.homeSection .menu{display: none;width: 70%;height: 100vh;background-color: #1c1d20fd;position: fixed;top: 0%;right: 0%;padding: 0 20px;z-index: 999999999999999999999;}
+.homeSection .menu span{width: 100%;height: 90%;display: flex;flex-direction: column;justify-content: space-around;align-items: center;
+font-family: lemonada;}
+.homeSection .menu span a{text-decoration: none;color: whitesmoke;border-bottom: 1px solid white;width: 100%;display: flex;justify-content: center;
+padding: 0px 0;}
+.homeSection .menu #closeIcon{transform: scale(.5);margin-top: 10px;z-index: 9999999;}
+
+.footerSection{margin:180px 0 90px 0;font-size: 14px;padding: 0;}
+.footerSection span{flex-direction: column;text-align: center;}
+.footerSection span p{margin-top: 10px;}
+
+.mineSection .cardsSpan .textsSpan h1{font-size: 20px;}
+.mineSection .cardsSpan .textsSpan{margin-top: -10px;right: 0;position: static;height: 80%}
+
+
+}
+/* ------------------------------------------------------------ */
+@media (min-width:550px) and (max-width:800px){
+
+.homeSection .topNav{padding: 0 4%;}
+.homeSection .topNav .titlesSpan{width: 70%;}
+.homeSection .menu{display: none;}
+
+}
+/* ------------------------------------------------ */
+@media (max-width:1040px){
+
+    .mineSection .cardsSpan{width: 100%;display: flex;direction: rtl;padding: 0 20px;flex-direction: column;align-items: center;
+    justify-content: space-between}
+    .mineSection .cardsSpan .imgSpan{width: 100%;height: 100%;background-image: url(../images/analysis-2030261_1920.jpg);background-size: cover;
+    background-position: center;}
+    .mineSection .cardsSpan .textsSpan{margin-top: -20px;right: 0;position: static;}
+    .mineSection{padding: 10px 0;height: 700px;}
+    .mineSection .cardsSpan .textsSpan h1{font-size: 30px;}
+
+    
+    }
+/* ------------------------------------------------------------- */
+@media (min-width:1040px) and (max-width:1200px){
+
+.homeSection{background-position: center}
+.homeSection .topNav{padding: 0 3%;}
+.homeSection .content h1{font-size: 30px;}
+    
+.mineSection .cardsSpan .textsSpan{font-family: lemonada;box-shadow:0 6px 40px rgb(0 0 0 / 20%);height: 50%;padding: 20px;width: 100%;
+position: relative;right: -5%;bottom: -40%;z-index: 99999999999;background-color: white;}
+
+}
+/* ------------------------------------------------------------- */
